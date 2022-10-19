@@ -1,0 +1,103 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 150%;
+}
+
+#head1 {
+  background-color: #A52A2A;
+  color: white;
+}
+
+#head2 {
+  background-color: #DEB887;
+}
+
+#head3 {
+  background-color: #FF7F50;
+}
+
+section {
+  position: relative; 
+  overflow: hidden;
+  background-color: #999999;
+  height: 150px;
+  border: 1px solid black;
+  margin: 15px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px ;
+  color: black;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right:  0;
+  width: 100px;
+  height: 30px;
+  font-size:  125%;
+  border: 1px solid black;
+  text-align: center;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+   
+  }
+ 
+  .col-lg-4 {
+    width: 30%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+
+  .col-md-6 {
+    width: 45%;
+  }
+ 
+  .col-md-12 {
+    width: 94%;
+  }
+  
+ 
+}
+
+
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+   .col-sm-12 {
+    float: left;
+  }
+  
+
+  .col-sm-12 {
+    width: 90%;
+  }
+ 
+  
+}
